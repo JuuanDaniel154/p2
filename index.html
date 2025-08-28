@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shingeki no Kyojin</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="p-5 bg-dark text-white">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvWGzR2RfmOd_Z5XD7qc3HM0Sx22xrJ7ShFg&s" class="nav-img" loading="lazy" alt="Logo Attack on Titan">
+      <ul class="nav mt-5">
+        <li class="nav-item"><a class="nav-link text-danger" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link text-danger" href="#galeria">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link text-danger" href="#contato">Contato</a></li>
+      </ul>
+      <div id="acessibilidade" class="menu-acessibilidade">
+        <button id="botao-acessibilidade" class="btn btn-danger rotacao-botao fw-bold">Acessibilidade</button>
+        <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+          <button id="aumentar-fonte" class="btn btn-danger fw-bold">A +</button>
+          <button id="diminuir-fonte" class="btn btn-danger fw-bold">A -</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <section id="inicio" class="my-5">
+      <div class="inicio-fundo d-flex justify-content-between align-items-center">
+        <div class="esquerda-conteudo">
+          <h1 class="display-4 text-white fst-italic fw-bold">Bem-vindo à Muralha Maria</h1>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5lQiSCwfj1-d23aG4oXomzFnOYaM9BMI15mq4S0D_R6ZQP6Jq5nEZKLIaJMf4v4inhek&usqp=CAU" class="mb-3" width="300" height="300" loading="lazy" alt="Emblema dos Scouts">
+          <a href="#titan-info" class="btn btn-danger btn-lg botao-inicio fw-semibold">Conheça os Titãs</a>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx3IcIVuQDuDQ_YjmmhyoxNky-M05WylMfl2SEbiRUCXg12zpLmhV03qr7bCMKEdMHEzc&usqp=CAU" alt="Eren em forma de Titã" title="Eren Yeager - Attack on Titan" class="img-fluid img-inicio">
+      </div>
+    </section>
+
+    <section id="titan-info" class="my-5 pt-6 secao-tropicalia">
+      <div class="container d-flex align-items-center">
+        <div class="col-4 d-flex justify-content-center">
+          <img src="https://i.redd.it/nnfkfvgtkd5c1.jpeg" class="rounded-pill" alt="Titã Colossal" width="273" height="331" loading="lazy">
+        </div>
+        <div class="col-5">
+          <h2>O que são os Titãs?</h2>
+          <p class="p-2">Os Titãs são criaturas gigantescas que ameaçam a humanidade em Attack on Titan. Com origens misteriosas e poderes devastadores, eles representam o medo, a guerra e a luta pela liberdade. A série explora temas profundos como identidade, política e sobrevivência em um mundo pós-apocalíptico.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <h2 class="text-center pt-5">Galeria</h2>
+      <div class="container p-3 mt-3 fundo-galeria">
+        <div class="row justify-content-md-center">
+          <div class="col-md-4">
+            <img src="https://static.wikia.nocookie.net/animeverso/images/9/93/MikasaAckermanPTSKRender.png/revision/latest?cb=20240405230925&path-prefix=pt-br" class="img-fluid rounded-5" loading="lazy" alt="Mikasa Ackerman">
+          </div>
+          <div class="col-md-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRI023tTsWObZljvOQM0uRxg9r_gomdeJxDA&s" class="img-fluid rounded-5" loading="lazy" alt="Levi Ackerman">
+          </div>
+        </div>
+        <div class="row mt-4 justify-content-md-center">
+          <div class="col-md-4">
+            <img src="https://www.pngmart.com/files/23/Armin-PNG-Isolated-HD.png" class="img-fluid rounded-5" loading="lazy" alt="Armin Arlert">
+          </div>
+          <div class="col-md-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnzjC2gy6fLJ6omHE672_tXf4Qy0-9HMdRIg&s" class="img-fluid rounded-5" loading="lazy" alt="Hange Zoë">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container p-5 d-flex justify-content-center">
+        <div class="col-md-8 col-lg-10 rounded-5 formulario">
+          <h2 class="mb-3">Entre em contato com os Scouts</h2>
+          <form>
+            <div class="form-group mb-3">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome completo">
+            </div>
+            <div class="form-group mb-3">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email">
+            </div>
+            <div class="form-group mb-3">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem"></textarea>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-danger btn-lg rounded-pill">Enviar mensagem</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center p-3 fst-italic bg-dark text-white">
+    <p>Siga os Scouts:</p>
+    <i class="bi bi-whatsapp"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-youtube"></i>
+    <p class="mt-3">Projeto fictício inspirado em Attack on Titan. Sem fins comerciais.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
