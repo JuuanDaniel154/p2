@@ -23,14 +23,38 @@ section {
   background-color: #000;
 }
 
-.formulario,
-.fundo-galeria {
-  background-color: #111; /* tom escuro para destacar conteúdo */
+header,
+section,
+footer,
+.inicio-fundo,
+.fundo-galeria,
+.formulario {
+  background-color: transparent;
+  color: #ffffff;
 }
 
-.nav-link {
-  color: var(--vermelho-sangue);
-  font-weight: 600;
+.nav-link,
+a,
+label,
+h1,
+h2,
+p {
+  color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #dddddd;
+}
+
+img {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
 }
 
 .inicio-fundo {
